@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-04/05.css">
+</head>
+<body>
+  <h2>3. 인용문 관련 태그들</h2>
+  &lt;blockquote&gt;와 &lt;cite&gt;태그
+    <blockquote cite="https://www.yalco.kr/@html-css/1-3/">
+      <p>
+        blockquote는 안쪽의 텍스트가 긴 인용문을 나타낸다. 들여쓰기 된 것으로 나타난다.<br>
+        인용문의 출처 URL은 cite특성으로, 출처 텍스트는 &lt;cite&gt;로 제공한다.
+      </p>
+    </blockquote>
+    <cite>blockquote 인용 블록 요소</cite> from yalco
+  <p>
+    &lt;q&gt;태그<br>
+    <q cite="https://www.yalco.kr/@html-css/1-3/"
+    >q태그는 텍스트가 짧은 인용문을 나타냅니다.</q>
+    <!-- q태그의 닫는 꺾쇄를 내용과 붙혀 적어야 따옴표 사이에 공간이 생기지 않는다. -->
+  </p>
+  <p>
+    &lt;mark&gt;태그<br>
+    mark 태그를 사용하면 강조되어야 할 부분을 특별하게 표시한다. css로 변화시킬 수 있다.<br>
+    ex) <mark>이것이 mark 태그를 사용한 것</mark>
+  </p>
+  <h2>4. 목록 표현 태그들</h2> 
+  <p>
+    순서가 필요하지 않는 목록들의 경우 &lt;ul&gt;태그를 사용한다. 중첩 ul태그도 가능하다.
+    <ul>
+      <li>크기</li>
+      <li>색깔</li>
+        <ul>
+          <li>빨간색</li>
+          <li>파란색</li>
+          <li>초록색</li>
+        </ul>
+      <li>수명</li>
+      <li>특징</li>
+    </ul>
+    순서가 필요한 목록들의 경우 &lt;ol&gt;태그를 사용한다. 역시 중첩도 가능하다.
+    <ol>
+      <li>빵 굽기</li>
+      <li>계란 굽기</li>
+      <li>베이컨 굽기</li>
+      <li>빵 사이에 재료들 넣기</li>
+    </ol>
+    또한, type과 start속성으로 번호 종류와 시작하는 번호를 바꿀 수 있다.<br>
+    다음은 로마자로 3부터 시작하도록 변경한 것이다.
+    <ol type="I" start="3">
+      <li>빵 굽기</li>
+      <li>계란 굽기</li>
+      <li>베이컨 굽기</li>
+      <li>빵 사이에 재료들 넣기</li>
+    </ol>
+  </p>
+  <h2>용어 정의 나열 태그들</h2>
+  &lt;dl&gt;은 나열할 용어와 정의들이 담긴 블록<br>
+  &lt;dt&gt;는 용어, &lt;dd&gt;는 정의를 담는 태그이다.
+  <dl>
+    <dt>프로그래밍</dt>
+    <dd>컴퓨터 프로그램을 작성하는 일</dd>
+
+    <dt>넓이</dt>
+    <dt>광</dt>
+    <dt>면적</dt>
+    <dd>일정한 평면에 걸쳐 있는 공간이나 범위의 크기</dd>
+
+    <dt>사과</dt>
+    <dd>사과나무의 열매</dd>
+    <dd>자기의 잘못을 인정하고 용서를 빎</dd>
+  </dl>
+</body>
+</html>
